@@ -12231,11 +12231,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\102231\\Documents\\dotnet-core-microservice\\Identity.Api\\Identity.Api.csproj",
+      "projectUniqueName": "C:\\Users\\102231\\Documents\\Nova pasta\\dotnet-core-microservice\\src\\Identity\\Identity.Api\\Identity.Api.csproj",
       "projectName": "Identity.Api",
-      "projectPath": "C:\\Users\\102231\\Documents\\dotnet-core-microservice\\Identity.Api\\Identity.Api.csproj",
+      "projectPath": "C:\\Users\\102231\\Documents\\Nova pasta\\dotnet-core-microservice\\src\\Identity\\Identity.Api\\Identity.Api.csproj",
       "packagesPath": "C:\\Users\\102231\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\102231\\Documents\\dotnet-core-microservice\\Identity.Api\\obj\\",
+      "outputPath": "C:\\Users\\102231\\Documents\\Nova pasta\\dotnet-core-microservice\\src\\Identity\\Identity.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
