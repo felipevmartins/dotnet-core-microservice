@@ -3,12 +3,14 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);1591</NoWarn>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <UserSecretsId>7cd5d1dd-63da-41f2-9aee-4435e7ff3f49</UserSecretsId>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>C:\Users\102231\Documents\net_core\Identity.Api\Identity.Api.xml</DocumentationFile>
+    <DocumentationFile>\opt\dev\projects\dotnet-core-microservice\src\Identity\Identity.API\Identity.Api.csproj\Identity.Api.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
