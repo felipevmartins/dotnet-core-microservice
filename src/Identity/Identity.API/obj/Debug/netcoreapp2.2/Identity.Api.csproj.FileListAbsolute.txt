@@ -28,3 +28,17 @@ C:\Users\102231\Documents\dotnet-core-microservice\Identity.Api\obj\Debug\netcor
 C:\Users\102231\Documents\dotnet-core-microservice\Identity.Api\obj\Debug\netcoreapp2.2\Identity.Api.RazorTargetAssemblyInfo.cache
 C:\Users\102231\Documents\dotnet-core-microservice\Identity.Api\obj\Debug\netcoreapp2.2\Identity.Api.dll
 C:\Users\102231\Documents\dotnet-core-microservice\Identity.Api\obj\Debug\netcoreapp2.2\Identity.Api.pdb
+C:\Desenvolvimento\dotnet-core-microservice\src\Identity\Identity.Api\obj\Debug\netcoreapp2.2\Identity.Api.csproj.CoreCompileInputs.cache
+C:\Desenvolvimento\dotnet-core-microservice\src\Identity\Identity.Api\obj\Debug\netcoreapp2.2\Identity.Api.RazorAssemblyInfo.cache
+C:\Desenvolvimento\dotnet-core-microservice\src\Identity\Identity.Api\obj\Debug\netcoreapp2.2\Identity.Api.RazorAssemblyInfo.cs
+C:\Desenvolvimento\dotnet-core-microservice\src\Identity\Identity.Api\obj\Debug\netcoreapp2.2\Identity.Api.AssemblyInfoInputs.cache
+C:\Desenvolvimento\dotnet-core-microservice\src\Identity\Identity.Api\obj\Debug\netcoreapp2.2\Identity.Api.AssemblyInfo.cs
+C:\Desenvolvimento\dotnet-core-microservice\src\Identity\Identity.Api\obj\Debug\netcoreapp2.2\Identity.Api.dll
+C:\Desenvolvimento\dotnet-core-microservice\src\Identity\Identity.Api\obj\Debug\netcoreapp2.2\Identity.Api.pdb
+C:\Desenvolvimento\dotnet-core-microservice\src\Identity\Identity.Api\bin\Debug\netcoreapp2.2\Identity.Api.deps.json
+C:\Desenvolvimento\dotnet-core-microservice\src\Identity\Identity.Api\bin\Debug\netcoreapp2.2\Identity.Api.runtimeconfig.json
+C:\Desenvolvimento\dotnet-core-microservice\src\Identity\Identity.Api\bin\Debug\netcoreapp2.2\Identity.Api.runtimeconfig.dev.json
+C:\Desenvolvimento\dotnet-core-microservice\src\Identity\Identity.Api\bin\Debug\netcoreapp2.2\Identity.Api.dll
+C:\Desenvolvimento\dotnet-core-microservice\src\Identity\Identity.Api\bin\Debug\netcoreapp2.2\Identity.Api.pdb
+C:\Desenvolvimento\dotnet-core-microservice\src\Identity\Identity.Api\bin\Debug\netcoreapp2.2\Identity.Api.xml
+C:\Desenvolvimento\dotnet-core-microservice\src\Identity\Identity.Api\obj\Debug\netcoreapp2.2\Identity.Api.RazorTargetAssemblyInfo.cache
