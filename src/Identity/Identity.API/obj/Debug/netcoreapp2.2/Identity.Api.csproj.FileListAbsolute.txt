@@ -42,3 +42,4 @@ C:\Desenvolvimento\dotnet-core-microservice\src\Identity\Identity.Api\bin\Debug\
 C:\Desenvolvimento\dotnet-core-microservice\src\Identity\Identity.Api\bin\Debug\netcoreapp2.2\Identity.Api.pdb
 C:\Desenvolvimento\dotnet-core-microservice\src\Identity\Identity.Api\bin\Debug\netcoreapp2.2\Identity.Api.xml
 C:\Desenvolvimento\dotnet-core-microservice\src\Identity\Identity.Api\obj\Debug\netcoreapp2.2\Identity.Api.RazorTargetAssemblyInfo.cache
+C:\Desenvolvimento\dotnet-core-microservice\src\Identity\Identity.Api\obj\Debug\netcoreapp2.2\Identity.Api.csprojAssemblyReference.cache
