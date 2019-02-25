@@ -1,17 +1,12 @@
-CREATE DATABASE auth;
-
-\c auth
+\connect auth
 
 CREATE TABLE users (
-    id SERIAL NOT NULL,
+    id SERIAL PRIMARY KEY NOT NULL,
     name VARCHAR(100) NOT NULL,
     email VARCHAR(100) NOT NULL,
-    password VARCHAR(250) NOT NULL,
-    PRIMARY KEY (id)
+    password VARCHAR(250) NOT NULL
 );
 
-CREATE USER docker WITH ENCRYPTED PASSWORD 'docker';
-GRANT ALL PRIVILEGES ON DATABASE auth TO docker;
-GRANT USAGE ON SCHEMA public TO docker;
-GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO docker;
-GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public TO docker;
+ALTER TABLE "users" OWNER TO docker;
+
+Insert into users(name,email,password) values( 'docker','docker@docker.com','docker');

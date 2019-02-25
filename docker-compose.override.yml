@@ -1,12 +1,10 @@
 version: '3.4'
 
 services:
- # sql.data:
- #   environment:
- #     POSTGRES_PASSWORD: 'postgres'
- #   ports:
- #     - 5432:5432
- #
+  sql.data:
+    ports:
+      - 5432:5432
+ 
  # nosql.data:
  #   ports:
  #     - 27017:27017  
@@ -21,8 +19,7 @@ services:
  #     - 5672:5672
  #     
   identity.api:
-    environment:
-      - ASPNETCORE_ENVIRONMENT=Development
+   
     ports:
       - 5100:80
     

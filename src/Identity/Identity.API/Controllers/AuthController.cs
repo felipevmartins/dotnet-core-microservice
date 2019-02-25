@@ -34,7 +34,12 @@ namespace Identity.Api.Controllers
             bool credenciaisValidas = true;
             if (user != null && !String.IsNullOrWhiteSpace(user.email))
             {
-                var userBase = _userContext.users.Single(u => u.name == user.name);
+                var userBase = _userContext.users.Where(b => b.name == user.name).Select((c) => new
+                {
+                    name = c.name,
+                    password = c.password
+                }).FirstOrDefault();
+
                 credenciaisValidas = (userBase != null &&
                     user.name == userBase.name &&
                     user.password == userBase.password);
