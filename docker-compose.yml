@@ -3,48 +3,48 @@ version: '3.4'
 volumes:
   data:
 
-networks:
-  db:
-  queue:
+#networks:
+ # db:
+ # queue:
 
 services:
-  sql.data:
-    image: postgres
-    volumes:
-      # Volume dos dados
-      - data:/var/lib/postgresql/data
-      # Scripts
-      - ./scripts:/scripts
-      - ./scripts/init.sql:/docker-entrypoint-initdb.d/init.sql
-      - ./scripts/init.sh:/docker-entrypoint-initdb.d/init.sh
-    networks:
-      - db
-
-  nosql.data:
-    image: mongo
-    networks:
-      - db
-
-  memory.data:
-    image: redis
-    networks:
-      - db
-
-  rabbitmq:
-    image: rabbitmq
-    networks:
-      - queue
-
+ # sql.data:
+ #   image: postgres
+ #   volumes:
+ #     # Volume dos dados
+ #     - data:/var/lib/postgresql/data
+ #     # Scripts
+ #     - ./scripts:/scripts
+ #     - ./scripts/init.sql:/docker-entrypoint-initdb.d/init.sql
+ #     - ./scripts/init.sh:/docker-entrypoint-initdb.d/init.sh
+ #   networks:
+ #     - db
+ #
+ # nosql.data:
+ #   image: mongo
+ #   networks:
+ #     - db
+ #
+ # memory.data:
+ #   image: redis
+ #   networks:
+ #     - db
+ #
+ # rabbitmq:
+ #   image: rabbitmq
+ #   networks:
+ #     - queue
+ #
   identity.api:
     image: identity.api:${TAG:-latest}
     build:
       context: .
       dockerfile: ./src/Identity/Identity.API/Dockerfile    
-    networks:
-      - db
-    depends_on:
-      - sql.data
-    environment:
-      - DB_NAME=auth
-      - DB_USER=docker
-      - DB_PASS=docker
+ #   networks:
+ #     - db
+ #   depends_on:
+ #     - sql.data
+ #   environment:
+ #     - DB_NAME=auth
+ #     - DB_USER=docker
+ #     - DB_PASS=docker

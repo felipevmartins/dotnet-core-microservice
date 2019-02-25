@@ -16,19 +16,22 @@ namespace Identity.Api.Controllers
     public class AuthController : ControllerBase
     {
         private UserContext _userContext;
-        
-        public AuthController(UserContext userContext)
+        private SigningConfigurations _signingConfigurations;
+        private TokenConfigurations _tokenConfigurations;
+
+
+        public AuthController(UserContext userContext, SigningConfigurations signingConfigurations, TokenConfigurations tokenConfigurations)
         {
             _userContext = userContext;
+            _signingConfigurations = signingConfigurations;
+            _tokenConfigurations = tokenConfigurations;
         }
         // POST api/values
         [AllowAnonymous]
         [HttpPost]
-        public object Post([FromBody] User user,
-            [FromServices]SigningConfigurations signingConfigurations,
-            [FromServices]TokenConfigurations tokenConfigurations)
+        public object Post([FromBody] User user)
         {
-            bool credenciaisValidas = false;
+            bool credenciaisValidas = true;
             if (user != null && !String.IsNullOrWhiteSpace(user.email))
             {
                 var userBase = _userContext.users.Single(u => u.name == user.name);
@@ -49,14 +52,14 @@ namespace Identity.Api.Controllers
 
                 DateTime dataCriacao = DateTime.Now;
                 DateTime dataExpiracao = dataCriacao +
-                    TimeSpan.FromSeconds(tokenConfigurations.Seconds);
+                    TimeSpan.FromSeconds(_tokenConfigurations.Seconds);
 
                 var handler = new JwtSecurityTokenHandler();
                 var securityToken = handler.CreateToken(new SecurityTokenDescriptor
                 {
-                    Issuer = tokenConfigurations.Issuer,
-                    Audience = tokenConfigurations.Audience,
-                    SigningCredentials = signingConfigurations.SigningCredentials,
+                    Issuer = _tokenConfigurations.Issuer,
+                    Audience = _tokenConfigurations.Audience,
+                    SigningCredentials = _signingConfigurations.SigningCredentials,
                     Subject = identity,
                     NotBefore = dataCriacao,
                     Expires = dataExpiracao
